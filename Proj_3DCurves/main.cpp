@@ -4,7 +4,6 @@
 #include <algorithm>
 #include <memory>
 
-// Ѕазовый класс кривой
 class Curve {
 public:
 	virtual ~Curve() = default;
@@ -12,7 +11,6 @@ public:
 	virtual void calculatePointAndDerivative(double t, double& x, double& y, double& z, double& dx, double& dy, double& dz) const = 0;
 };
 
-//  ласс  руг
 class Circle : public Curve {
 private:
 	double radius;
@@ -38,7 +36,6 @@ public:
 	}
 };
 
-//  ласс Ёллипс
 class Ellipse : public Curve {
 private:
 	double RadiusX;
@@ -65,7 +62,6 @@ public:
 	}
 };
 
-//  ласс —пираль
 class Spiral : public Curve {
 private:
 	double radius;
